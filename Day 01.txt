@@ -1,0 +1,305 @@
+14th of March 2025
+Operating Systems IT 2244 
+Day 01 Practical
+
+COMMAND PROMPT PRACTICAL
+
+Practical 01: Creating a Batch Script for Directory Structure Creation
+----------------------------------------------------------------------
+
+Objective:
+-----------
+The objective of this practical is to create a batch script that automates the process of creating a structured directory hierarchy. 
+The script will create directories based on predefined criteria and standards for each criterion.
+
+Pre-requisites:
+---------------
+A text editor (e.g., Notepad++, Visual Studio Code) to write the batch script. We have used Notepad++
+Basic understanding of Windows Batch scripting and file system structure.
+Windows OS (since the batch script is for Windows environments).
+
+Steps to Create the Batch Script:
+--------------------------------
+1.Open a Text Editor:
+
+2.Open your preferred text editor (e.g., Notepad++, Visual Studio Code, or Notepad).
+  We have used Notepad++
+
+3.Write the Script:
+
+In the text editor, type the following script. This script uses basic batch commands like mkdir (make directory) and cd (change directory) to create a structured hierarchy.
+
+mkdir criteria_1
+cd criteria_1
+mkdir standard_1
+mkdir standard_2
+cd..
+mkdir criteria_2
+cd criteria_2
+mkdir standard_1
+mkdir standard_2
+cd..
+mkdir criteria_3
+cd criteria_3
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+cd..
+mkdir criteria_4
+cd criteria_4
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+cd..
+mkdir criteria_5
+cd criteria_5
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+cd..
+mkdir criteria_6
+cd criteria_6
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+
+
+Running the Batch Script:
+---------------------------
+1.Save the Script:
+
+After typing the script, save the file with a .bat extension. For example, save it as create_directories.bat
+
+2.Execute the Script:
+
+Locate the .bat file in File Explorer.
+Double-click on the file to execute the script.
+The script will automatically create the directory structure in the location where the .bat file is executed.
+
+Batch Script Commands Used:
+----------------------------
+mkdir: Creates directories.
+cd: Changes the current working directory
+
+
+Conclusion:
+--------------
+In this practical, we learned how to create a batch script to automate the creation of a specific directory structure. 
+By using commands like mkdir and cd, we ensured that the directories were organized hierarchically, which is beneficial 
+for maintaining consistent folder structures across projects or teams
+
+
+Practical 02: Creating a Batch Script for Age Calculation
+-----------------------------------------------------------
+
+Objective:
+-----------
+The objective of this batch script is to prompt the user for their birth year and calculate their current age based on the current date. 
+It uses the %date% variable to retrieve the current year and then calculates the difference between the current year and the user's input.
+
+Steps for the script
+---------------------
+
+1.Open a Text Editor:
+2.Write the  following Script:
+
+@echo off
+set /p birth_year=Enter your birth year:
+set /a age=%date:~10,4% - %birth_year%
+echo your age is:%age%
+pause
+
+Running the Batch Script:
+-------------------------
+1.Save the Script:
+
+After typing the script, save the file with a .bat extension.
+
+2.Execute the Script:
+
+Locate the .bat file in File Explorer.
+Double-click on the file to execute the script.
+It will ask you to input your birth year, and then it will calculate and display your age.
+
+Explanation of the Script:
+---------------------------
+
+@echo off: Hides the command execution details for cleaner output.
+set /p birth_year=...: Prompts the user to input their birth year and stores it in the birth_year variable.
+%date:~10,4%: Extracts the current year from the system's date.
+set /a age=%date:~10,4% - %birth_year%: Calculates the user's age by subtracting their birth year from the current year.
+echo Your age is: %age%: Displays the calculated age to the user.
+pause: Pauses the script so the user can view the result before closing the window.
+
+Expected Output:
+-----------------
+Enter your birth year: 1990
+Your age is: 35
+Press any key to continue...
+
+
+Conclusion:
+In this practical, we created a batch script that calculates a user's age based on their birth year and the current year. 
+We used basic batch scripting commands such as set, echo, and pause to interact with the user and perform arithmetic calculations.
+
+
+
+Practical 03: Displaying System Information Using a Batch Script
+-----------------------------------------------------------------
+
+Objective:
+This batch script retrieves and displays key system details such as the username, Windows version, current date, and time.
+
+Steps for the script
+---------------------
+
+1.Open a Text Editor:
+2.Write the  following Script:
+
+@echo off
+echo username : %username%
+echo version : 
+ver
+
+echo Date : %date%
+
+echo Time : 
+time
+
+pause
+
+
+3.Save the Script:
+Save the file with a .bat extension (e.g., system_info.bat).
+
+4.Run the Script:
+Double-click the .bat file to execute it
+
+Explanation of the Commands
+------------------------------
+
+@echo off – Hides command execution details for a cleaner output.
+echo Username : %username% – Displays the current logged-in username.
+echo Version : – Prints "Version :" as a label.
+ver – Retrieves and displays the Windows OS version.
+echo Date : %date% – Displays the current system date.
+echo Time : – Prints "Time :" as a label.
+time – Displays the system time (may prompt for modification).
+pause – Prevents the window from closing immediately, allowing the user to view the output
+
+
+Expected Output:
+-----------------
+
+Username : kalaf
+Version :  
+Microsoft Windows [Version 10.0.22631.4890]
+
+Date : Sun 03/24/2025
+
+Time :  
+Current time is: 14:30:45.12
+Enter new time:
+
+
+Conclusion:
+This script is useful for quickly checking system details, such as the username, Windows version, and current date/time, 
+without manually entering commands in the terminal.
+
+
+
+Practical 04: Changing Color of CMD Console
+---------------------------------------------
+
+Objective: Change the text and background color of the CMD console in Windows.
+
+Steps:
+------
+
+1.Open CMD:
+
+Press Win + R to open the Run dialog.
+
+2.Type cmd and press Enter to open the Command Prompt.
+
+Use the color Command:
+
+3.In the Command Prompt window, type color /? and press Enter to see the help for the color command.
+
+The syntax for changing the color is:
+	--> color [BG][FG]
+
+BG (Background): First digit (0-F) sets the background color.
+
+FG (Foreground/Text): Second digit (0-F) sets the text color.
+
+Color Codes:
+-------------
+
+Here are the color codes you can use:
+
+0 = Black
+
+1 = Blue
+
+2 = Green
+
+3 = Aqua
+
+4 = Red
+
+5 = Purple
+
+6 = Yellow
+
+7 = White
+
+8 = Gray
+
+9 = Light Blue
+
+A = Light Green
+
+B = Light Aqua
+
+C = Light Red
+
+D = Light Purple
+
+E = Light Yellow
+
+F = Bright White
+
+Example:
+
+To set the background to black and text to light green, type color 0A and press Enter.
+
+Reset Colors:
+---------------
+To reset to the default colors (black background, white text), type color and press Enter.
+
+Note: Changes made with the color command persist only for the current CMD session. Once you close the CMD window, it will revert to default colors.
+
+Conclusion:
+-------------
+
+Experiment with different color combinations using the color command to customize the appearance of your CMD console according to your preference.
+
+This documentation should help you effectively change the CMD console's color for your practical exercise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
