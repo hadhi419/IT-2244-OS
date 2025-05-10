@@ -1,1 +1,18 @@
-# IT-2244-OS
+Description
+This set of batch scripting exercises was created to develop foundational skills in Windows command prompt scripting as part of the Operating Systems IT-2244 course. The goal was to automate routine system tasks, work with directory structures, interact with system variables, and customize the CMD interface. These practicals gave me hands-on experience with basic scripting logic, system interaction, and file handling using .bat files.
+
+Features:
+Automated Directory Structure Creation
+I created a batch script to generate a predefined folder hierarchy using the mkdir and cd commands. The script built multiple main directories named criteria_1 to criteria_6, and inside each of these, it created a set of subdirectories labeled as standard_1, standard_2, and standard_3 based on the criteria. For example, under criteria_1, it created two folders: standard_1 and standard_2, whereas under criteria_3, it created three folders: standard_1, standard_2, and standard_3. This exercise helped me understand how to navigate the file system and automate directory creation efficiently using simple batch commands. It resulted in a consistent and repeatable folder structure that could be used in various projects or academic settings.
+
+Age Calculation with Batch Script
+In this practical, I developed a batch script that calculates a user's age by prompting them to input their birth year. The script retrieves the current year from the system's %date% variable, extracts the year portion using substring syntax, and performs a subtraction operation to determine the user's age. For example, if the user enters 1990 and the system year is 2025, the output will be “Your age is: 35.” This exercise allowed me to practice variable declaration, user input, string manipulation, and arithmetic operations in a scripting environment. It provided a basic yet practical use of batch scripting for interacting with users and performing calculations.
+
+Displaying System Information
+This task involved writing a batch script to display useful system information such as the currently logged-in username, the Windows version, the current date, and the current time. I used environment variables like %username% and %date%, as well as system commands such as ver and time, to retrieve and display the necessary data. The echo command was used to present the output in a clean and structured format, and the pause command ensured that the console window remained open so the user could view the information. This script is useful for quickly accessing system details without manually entering individual commands each time.
+
+CMD Console Color Customization
+I explored the color command to modify the appearance of the CMD console by adjusting its text and background colors. The command accepts hexadecimal digits ranging from 0 to F, where each digit represents a specific color. The first digit sets the background color, and the second digit sets the text color. For instance, the command color 0A sets the background to black and the text to light green. Running color /? displayed all the available options, and simply typing color resets the console to its default settings. Through this practical, I learned how to personalize the terminal environment and gained a better understanding of how console commands can influence the user interface.
+
+Summary
+These practical exercises significantly improved my understanding of batch scripting in a Windows environment. I learned how to automate directory creation, perform user-based input calculations, retrieve and display system data, and enhance the usability of the command-line interface. Each script served as a hands-on opportunity to apply basic scripting logic to real-world use cases. Overall, the practicals gave me a solid foundation in scripting and a clearer appreciation of how automation can streamline repetitive tasks on a computer system.
