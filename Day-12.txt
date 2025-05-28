@@ -1,0 +1,319 @@
+1.
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\n");
+  return 0;
+}
+
+save as first.c
+gcc first.c -o first
+./first
+
+output:
+[2021ict71@fedora ~]$ ./first
+Hello World!
+
+explanation of command:
+#include <stdio.h>: Includes the Standard Input Output library for using printf.
+int main() {}: Main function – the entry point of any C program.
+printf("Hello World!\n");: Prints the string followed by a new line.
+return 0;: Indicates successful program termination
+
+2.
+#include <stdio.h>
+
+int main() {
+  int age=25;
+  printf(age); //incorrect
+  printf("%d",age);
+  return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./secondc
+25[2021ict71@fedora ~]$
+
+explanation of command:
+printf(age); is incorrect because printf expects a format string, not a variable directly.
+printf("%d", age);: Correct way – %d is the format specifier for an integer.
+
+
+###########################
+%d / %i - integers
+%f / %F - floats
+%lf - char
+%s - string
+
+3.
+#include <stdio.h>
+
+int main() {
+  int age=25;
+ printf("%d",age);
+printf("\nc programming");
+age=31;
+printf("\nNew age:%d",age);
+  return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./third
+25
+c programming
+New age:31[2021ict71@fedora ~]$ 
+
+explanation of command:
+Declares and initializes age.
+\n adds a new line before text.
+Changes the value of age and prints it.
+
+3.
+#include <stdio.h>
+
+int main(){
+
+int firstNumber=25;
+int secondNumber=firstNumber;
+printf("Second Number:%d",secondNumber);
+
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first3
+Secon Number:25[2021ict71@fedora ~]$
+
+explanation of command:
+Copies the value of firstNumber into secondNumber.
+Prints secondNumber.
+
+4.//declaring multiple variables in single line
+#include <stdio.h>
+
+int main(){
+int firstNumber,secondNumber=36;
+printf("First Number:%d",firstNumber);
+printf("Second Number:%d",secondNumber);
+
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first4
+First Number:1Second Number:36[2021ict71@fedora ~]$
+
+explanation of command:
+Only secondNumber is initialized. firstNumber remains uninitialized it takes a random number
+(but whatever junk was already in memory) 
+
+/*
+
+---variable name conflicts-----
+can't create name with space 
+can't create name with numbers
+ 
+*/
+
+################ Data Types
+5.
+#include <stdio.h>
+
+int main(){
+int age=10;
+printf("%d",age);
+printf("size : %zu", sizeof(age));
+
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first5
+10size : 4[2021ict71@fedora ~]$
+
+explanation of command:
+%zu is used to print size (result of sizeof).
+An int is 4 bytes.
+
+6.
+#include <stdio.h>
+
+int main(){
+//double
+double height=12.45;
+printf("%lf\n",height);
+printf("%.2lf\n",height);
+printf("size of double : %zu\n", sizeof(height));
+
+//float
+float num2=10.9f;
+printf("%.1f\n",num2);
+printf("size of float: %zu\n", sizeof(num2));
+
+//char
+char character='z';
+printf("%c\n",character);
+printf("%d\n",character); //get the integer value of the character
+printf("size of char: %zu\n", sizeof(character));
+
+//
+
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first8
+12.450000
+12.45
+size of double : 8
+10.9
+size of float: 4
+z
+122 
+size of char: 1
+
+
+7.//user input
+#include <stdio.h>
+
+int main(){
+int age;
+printf("Enter the age:");
+scanf("%d", &age);   //&- ampasan
+printf("\nAge: %d", age);
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first9
+Enter the age:23
+
+Age: 23[2021ict71@fedora ~]$
+
+Explanation of code:
+scanf is used to get input.
+& (ampersand) gives the address of the variable to store the input.
+printf is used to show messages or output.
+
+8.
+#include <stdio.h>
+
+int main(){
+double height;
+printf("Enter the height:");
+scanf("%lf", &height);  
+printf("Height: %.2lf\n", height);
+
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first10
+Enter the height:155.67
+Height: 155.67
+
+
+9.//check
+#include <stdio.h>
+
+int main(){
+float number;
+char character;
+
+printf("Enter a float value:");
+scanf("%f", &number);
+printf("Float number: %f\n", number);
+
+printf("Enter a character:");
+scanf(" %c", &character);
+printf("Character is:%c\n", character);
+
+return 0;
+}
+
+output:
+
+[2021ict71@fedora ~]$ ./first11
+Enter a float value:45.67
+Float number: 45.669998
+Enter a character:y
+Character is:y
+
+
+10.//take multiple inputs togrther
+#include <stdio.h>
+
+int main(){
+double num;
+char alpha;
+printf("Enter a inputs:");
+scanf("%lf %c", &num,&alpha);
+printf("First input: %lf\n", num);
+printf("Second input: %c\n", alpha);
+return 0;
+}
+
+output:
+
+
+##################comments##########
+// - single live comments  ===> ctrl+/
+/* */ - multiple comments  ===> ctrl+shift+/
+
+11. ################C Operators
+#include <stdio.h>
+
+int main(){
+int num1;
+int num2;
+
+printf("Enter a num1:");
+scanf("%d", &num1);
+printf("Enter a num2:");
+scanf("%d", &num2);
+
+int sum=num1+num2;
+int sub=num1-num2;
+int mul=num1*num2;
+int div=num1/num2;
+float div = (float)num1 / num2;
+
+
+printf("Summation of %d + %d: %d/n",num1, num2,sum);
+printf("Substraction of %d - %d: %d/n",num1, num2,sub);
+printf("Multiplication of %d * %d: %d/n",num1, num2,mul);
+printf("Division of %d / %d: %.2f/n",num1, num2,div);
+return 0;
+}
+
+output:
+[2021ict71@fedora ~]$ ./first13                                                                          ~
+Enter a num1:4
+Enter a num2:3
+Summation of 4 + 3: 7
+Substraction of 4 - 3: 1
+Multiplication of 4 * 3: 12
+Division of 4 / 3: 1.33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
