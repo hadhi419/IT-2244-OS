@@ -50,7 +50,7 @@ Filter the rows where the GPA greater than 3.5
 command:
 awk -F, 'NR==1 || $4 > 3.5' data.csv
 Output:
-[2021ict37@fedora ~]$ awk -F, 'NR==1 || $4 > 3.5' data.csv
+[2021ict72@fedora ~]$ awk -F, 'NR==1 || $4 > 3.5' data.csv
 Name,Age,Department,GPA
 Priya,21,Environmentscience,3.7
 Carol,23,Physicalscience,3.99
@@ -72,7 +72,7 @@ command:
 awk -F, 'NR>1 {sum+=$4; count++} END {if (count > 0) print "Average GPA:", sum/count}' data.csv
 Output:
 
-[2021ict37@fedora ~]$ awk -F, 'NR>1 {sum+=$4; count++} END {if (count > 0) print "Average GPA:", sum/count}' data.csv
+[2021ict72@fedora ~]$ awk -F, 'NR>1 {sum+=$4; count++} END {if (count > 0) print "Average GPA:", sum/count}' data.csv
 Average GPA: 3.511
 
 Explanation of Command:
@@ -108,7 +108,7 @@ echo "$string2 is larger than $string1"
 fi
 
 Output:
-[2021ict37@fedora ~]$ ./strlengthcheck.sh
+[2021ict72@fedora ~]$ ./strlengthcheck.sh
 Enter String_1
 apple
 Enter String_2
