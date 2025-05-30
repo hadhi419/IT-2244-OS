@@ -11,7 +11,7 @@ else
 
 Example: Enter your age and verify whether you are eligible or not for voting in the election
 
-#include <stdio.h>
+#include <stdio.h>3
 int main() {
 	int age;
 	 printf("Enter your age:");		
@@ -24,10 +24,10 @@ int main() {
 }
 
 Output:
-[2021ict71@fedora ~]$ ./voting
+[2021ict72@fedora ~]$ ./voting
 Enter your age:16
 You're not Eligible
-[2021ict71@fedora ~]$ ./voting
+[2021ict72@fedora ~]$ ./voting
 Enter your age:21
 You're Eligible
 
@@ -49,10 +49,10 @@ int main() {
 
 
 
-[2021ict71@fedora ~]$ ./ternaryvoting
+[2021ict72@fedora ~]$ ./ternaryvoting
 Enter your age:12
 You're not Eligible
-[2021ict71@fedora ~]$ ./ternaryvoting
+[2021ict72@fedora ~]$ ./ternaryvoting
 Enter your age:54
 
 
@@ -107,7 +107,7 @@ int main() {
 }
 
 
-[2021ict71@fedora ~]$ ./switchDay
+[2021ict72@fedora ~]$ ./switchDay
 Enter the number of the day(1-7): 4
 Thursday
 
@@ -177,7 +177,7 @@ int main() {
 
 
 
-[2021ict71@fedora ~]$ ./LifePathNumber
+[2021ict72@fedora ~]$ ./LifePathNumber
 Enter a number(1-9): 5
 Can get Help
 
