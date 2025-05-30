@@ -13,7 +13,7 @@ do
 done
 
 output:
-[2021ict37@fedora ~]$ ./multiplicationtable.sh
+[2021ict72@fedora ~]$ ./multiplicationtable.sh
 Enter a number to get multiplication table:5
 5 x 1 = 5
 5 x 2 = 10
@@ -72,7 +72,7 @@ done
 
 output:
 
-[2021ict37@fedora ~]$ ./diamond.sh
+[2021ict72@fedora ~]$ ./diamond.sh
     *
    ***
   *****
@@ -114,7 +114,7 @@ done
 
 
 output:
-[2021ict37@fedora ~]$ ./boxpattern.sh
+[2021ict72@fedora ~]$ ./boxpattern.sh
 enter how many number of starts should be at first line: 5
 *****
 *   *
@@ -148,7 +148,7 @@ echo "Sum:" $sum
 
 Output:
 
-[2021ict37@fedora ~]$ ./fibonaccisum.sh
+[2021ict72@fedora ~]$ ./fibonaccisum.sh
 0
 1
 1
@@ -187,7 +187,7 @@ echo "sum: $sum"
 
 
 output:
-[2021ict37@fedora ~]$ ./primesum.sh
+[2021ict72@fedora ~]$ ./primesum.sh
 Sum: 1060
 
 Explanation:
