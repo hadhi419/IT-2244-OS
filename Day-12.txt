@@ -11,7 +11,7 @@ gcc first.c -o first
 ./first
 
 output:
-[2021ict71@fedora ~]$ ./first
+[2021ict72@fedora ~]$ ./first
 Hello World!
 
 explanation of command:
@@ -31,8 +31,8 @@ int main() {
 }
 
 output:
-[2021ict71@fedora ~]$ ./secondc
-25[2021ict71@fedora ~]$
+[2021ict72@fedora ~]$ ./secondc
+25[2021ict72@fedora ~]$
 
 explanation of command:
 printf(age); is incorrect because printf expects a format string, not a variable directly.
@@ -58,10 +58,10 @@ printf("\nNew age:%d",age);
 }
 
 output:
-[2021ict71@fedora ~]$ ./third
+[2021ict72@fedora ~]$ ./third
 25
 c programming
-New age:31[2021ict71@fedora ~]$ 
+New age:31[2021ict72@fedora ~]$ 
 
 explanation of command:
 Declares and initializes age.
@@ -81,8 +81,8 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first3
-Secon Number:25[2021ict71@fedora ~]$
+[2021ict72@fedora ~]$ ./first3
+Secon Number:25[2021ict72@fedora ~]$
 
 explanation of command:
 Copies the value of firstNumber into secondNumber.
@@ -100,8 +100,8 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first4
-First Number:1Second Number:36[2021ict71@fedora ~]$
+[2021ict72@fedora ~]$ ./first4
+First Number:1Second Number:36[2021ict72@fedora ~]$
 
 explanation of command:
 Only secondNumber is initialized. firstNumber remains uninitialized it takes a random number
@@ -128,8 +128,8 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first5
-10size : 4[2021ict71@fedora ~]$
+[2021ict72@fedora ~]$ ./first5
+10size : 4[2021ict72@fedora ~]$
 
 explanation of command:
 %zu is used to print size (result of sizeof).
@@ -162,7 +162,7 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first8
+[2021ict72@fedora ~]$ ./first8
 12.450000
 12.45
 size of double : 8
@@ -185,10 +185,10 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first9
+[2021ict72@fedora ~]$ ./first9
 Enter the age:23
 
-Age: 23[2021ict71@fedora ~]$
+Age: 23[2021ict72@fedora ~]$
 
 Explanation of code:
 scanf is used to get input.
@@ -208,7 +208,7 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first10
+[2021ict72@fedora ~]$ ./first10
 Enter the height:155.67
 Height: 155.67
 
@@ -233,7 +233,7 @@ return 0;
 
 output:
 
-[2021ict71@fedora ~]$ ./first11
+[2021ict72@fedora ~]$ ./first11
 Enter a float value:45.67
 Float number: 45.669998
 Enter a character:y
@@ -287,7 +287,7 @@ return 0;
 }
 
 output:
-[2021ict71@fedora ~]$ ./first13                                                                          ~
+[2021ict72@fedora ~]$ ./first13                                                                          ~
 Enter a num1:4
 Enter a num2:3
 Summation of 4 + 3: 7
